@@ -11,3 +11,8 @@ dependencies {
 }
 ```
 
+- **`common-lib/module-common-plain.jar` 소스 코드**
+
+
+  [링크](https://github.com/Dev-Pop-up-Store-Web/modules/tree/main/mongo-data/module-common)를 통해 소스 코드를 확인할 수 있다.
+
