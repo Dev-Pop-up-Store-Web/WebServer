@@ -10,7 +10,8 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 
 // basePackages = {"com.example.web.server.detail.repository1", "com.example.web.server.detail.repository2"} 이런식으로 추가
-@EnableMongoRepositories(basePackages = {"com.example.web.server.detail.repository"})
+@EnableMongoRepositories(basePackages = {"com.example.web.server.detail.repository",
+	"com.example.web.server.home.repository"})
 @Configuration
 public class MongoConfig {
 	@Value("${spring.data.mongodb.host}")
