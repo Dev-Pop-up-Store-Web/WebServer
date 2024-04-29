@@ -8,9 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.data.domain.PopUpStoreInfo;
 import com.example.web.server.common.repository.GenericRepository;
 import com.example.web.server.detail.domain.info.DetailInfo;
+import com.example.web.server.detail.repository.custom.CustomDetailRepository;
 
 @Repository
-public interface DetailRepository extends GenericRepository<PopUpStoreInfo, String> {
+public interface DetailRepository extends GenericRepository<PopUpStoreInfo, String>, CustomDetailRepository {
 	@Query(value = "{'id': ?0}", fields = "{ 'urls': 1, '_id': 0}")
 	List<String> getImageUrlsById(String id);
 
