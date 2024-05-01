@@ -41,5 +41,25 @@ public class ReviewService {
 		}
 		return true;
 	}
+
+	public List<ReviewResponse> getReviewByUser(String account) throws Exception {
+		List<Review> reviews = reviewRepository.findByAccount(account);
+		if (reviews.isEmpty()) {
+			throw new Exception("작성한 후기가 존재하지 않습니다.");
+		}
+		return reviews.stream()
+			.map(ReviewResponse::new)
+			.collect(Collectors.toList());
+	}
+
+	public List<ReviewResponse> getReviewById(String popupId) throws Exception{
+		List<Review> reviews = reviewRepository.findByPopupId(popupId);
+		if (reviews.isEmpty()) {
+			throw new Exception("해당 팝업에 대한 후기가 존재하지 않습니다.");
+		}
+		return reviews.stream()
+			.map(ReviewResponse::new)
+			.collect(Collectors.toList());
+	}
 }
 
