@@ -1,4 +1,4 @@
-package com.example.web.server.member.DTO;
+package com.example.web.server.member.controller.DTO;
 
 import com.example.web.server.member.domain.Review;
 
