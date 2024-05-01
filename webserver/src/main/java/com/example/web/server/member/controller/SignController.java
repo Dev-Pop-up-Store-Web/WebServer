@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.web.server.member.DTO.SignRequest;
-import com.example.web.server.member.DTO.SignResponse;
-import com.example.web.server.member.service.SignService;
+import com.example.web.server.member.DTO.sign.SignRequest;
+import com.example.web.server.member.DTO.sign.SignResponse;
+import com.example.web.server.member.business.SignService;
 
 import lombok.RequiredArgsConstructor;
 

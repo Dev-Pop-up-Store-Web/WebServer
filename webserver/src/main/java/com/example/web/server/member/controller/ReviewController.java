@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.web.server.member.DTO.ReviewRequest;
-import com.example.web.server.member.DTO.ReviewResponse;
-import com.example.web.server.member.service.ReviewService;
+import com.example.web.server.member.DTO.review.ReviewRequest;
+import com.example.web.server.member.DTO.review.ReviewResponse;
+import com.example.web.server.member.business.ReviewService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

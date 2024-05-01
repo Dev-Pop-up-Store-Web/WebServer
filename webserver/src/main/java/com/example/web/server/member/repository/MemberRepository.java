@@ -11,3 +11,5 @@ import com.example.web.server.member.domain.Member;
 public interface MemberRepository extends JpaRepository<Member, Long> {
 	Optional<Member> findByAccount(String account);
 }
+
+// public interface MemberRepository extends GenericRepository<Member, String> {
