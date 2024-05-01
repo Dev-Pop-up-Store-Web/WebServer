@@ -34,7 +34,7 @@ public class Review {
 	private String popupId;
 
 	@ManyToOne
-	@JoinColumn(name = "member")
+	@JoinColumn(name = "member_account") // account를 외래키로 사용
 	private Member member;
 
 	public void setMember(Member member) {
