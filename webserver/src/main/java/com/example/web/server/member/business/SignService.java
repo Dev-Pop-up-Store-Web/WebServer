@@ -1,4 +1,4 @@
-package com.example.web.server.member.service;
+package com.example.web.server.member.business;
 
 import java.util.Collections;
 
@@ -6,8 +6,8 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.example.web.server.member.DTO.SignRequest;
-import com.example.web.server.member.DTO.SignResponse;
+import com.example.web.server.member.DTO.sign.SignRequest;
+import com.example.web.server.member.DTO.sign.SignResponse;
 import com.example.web.server.member.domain.Authority;
 import com.example.web.server.member.domain.Member;
 import com.example.web.server.member.repository.MemberRepository;

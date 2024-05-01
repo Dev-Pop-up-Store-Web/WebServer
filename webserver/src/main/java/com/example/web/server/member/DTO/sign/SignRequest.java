@@ -1,4 +1,4 @@
-package com.example.web.server.member.DTO;
+package com.example.web.server.member.DTO.sign;
 
 import lombok.Getter;
 import lombok.Setter;

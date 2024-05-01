@@ -1,4 +1,4 @@
-package com.example.web.server.member.service;
+package com.example.web.server.member.business;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.example.web.server.member.DTO.ReviewRequest;
-import com.example.web.server.member.DTO.ReviewResponse;
+import com.example.web.server.member.DTO.review.ReviewRequest;
+import com.example.web.server.member.DTO.review.ReviewResponse;
 import com.example.web.server.member.domain.Review;
 import com.example.web.server.member.repository.MemberRepository;
 import com.example.web.server.member.repository.ReviewRepository;
