@@ -61,4 +61,10 @@ public class SignService {
 		}
 		return true;
 	}
+
+	public SignResponse getMember(String account) throws Exception {
+		Member member = memberRepository.findByAccount(account)
+			.orElseThrow(() -> new Exception("계정을 찾을 수 없습니다."));
+		return new SignResponse(member);
+	}
 }
