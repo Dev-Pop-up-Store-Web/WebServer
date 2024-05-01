@@ -1,4 +1,4 @@
-package com.example.web.server.member.controller.DTO;
+package com.example.web.server.member.DTO;
 
 import java.util.ArrayList;
 import java.util.List;
